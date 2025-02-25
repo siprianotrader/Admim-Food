@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin | Food</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="bg-gradient">
+      <div class="nav-wrapper container">
+        <a href="#" class="center brand-logo" href="index.html"
+          ><img src="img/logo.png"
+        /></a>
+
+        <ul class="right">
+          <li class="hide-on-med-and-down">
+            <a href="#" onclick="fullScreen()"
+              ><i class="material-icons">settings_overscan</i>
+            </a>
+          </li>
+        </ul>
+        <a
+          href="#"
+          data-target="slide-out"
+          class="sidenav-trigger left show-on-large"
+          ><i class="material-icons">menu</i></a
+        >
+      </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="img/city.jpg" />
+          </div>
+          <a href="#user"><img class="circle" src="img/user.jpg" /></a>
+          <a href="#name"><span class="white-text name">John Doe</span></a>
+          <a href="#email"
+            ><span class="white-text email">jdandturk@gmail.com</span></a
+          >
+        </div>
+      </li>
+
+      <li>
+        <a href="#!"><i class="material-icons">dashboard</i>Dashboard</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">shopping_cart</i>Pedidos</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">bookmark</i>Categorias</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">card_giftcard</i>Produtos</a>
+      </li>
+      <li>
+        <a href="#!"><i class="material-icons">peoples</i>Usuários</a>
+      </li>
+      <li><div class="divider"></div></li>
+      <li>
+        <a href="#!"><i class="material-icons">logout</i>Sair</a>
+      </li>
+    </ul>
+
+    <div class="row container">
+      <section class="info">
+        <div class="col s12 m6 l3">
+          <article class="bg-gradient-blue card z-depth-4">
+            <i class="material-icons">face</i>
+            <p>Clientes</p>
+            <h3>145</h3>
+          </article>
+        </div>
+
+        <div class="col s12 m6 l3">
+          <article class="bg-gradient-red card z-depth-4">
+            <i class="material-icons">hourglass_bottom</i>
+            <p>Pedidos aguardando entrega</p>
+            <h3>2</h3>
+          </article>
+        </div>
+
+        <div class="col s12 m6 l3">
+          <article class="bg-gradient-orange card z-depth-4">
+            <i class="material-icons">shopping_cart</i>
+            <p>Pedidos hoje</p>
+            <h3>145</h3>
+          </article>
+        </div>
+
+        <div class="col s12 m6 l3">
+          <article class="bg-gradient-green card z-depth-4">
+            <i class="material-icons">monetization_on</i>
+            <p>Faturamento mensal</p>
+            <h3>R$ 123,00</h3>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="row container">
+      <section class="configuracoes col s12">
+        <div class="card z-depth-4">
+          <h1><i class="material-icons">settings</i> Configurações</h1>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <span class="chip"><b> STATUS</b></span>
+
+              <div class="switch">
+                <label>
+                  Fechado
+                  <input type="checkbox" />
+                  <span class="lever"></span>
+                  Aberto
+                </label>
+              </div>
+            </div>
+
+            <div class="input-field col s12 m6">
+              <span class="chip"><b> PREVISÃO DE ENTREGA EM MINUTOS</b></span>
+              <input
+                placeholder="34,50"
+                id="first_name"
+                type="text"
+                class="validate input-dashboard"
+              />
+            </div>
+
+            <div class="input-field col s12 m6">
+              <span class="chip"><b> TAXA DE ENTREGA</b></span>
+              <input
+                placeholder="34,50"
+                id="first_name"
+                type="text"
+                class="validate input-dashboard"
+              />
+            </div>
+          </div>
+
+          <a href="" class="btn btn-large">Salvar</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
